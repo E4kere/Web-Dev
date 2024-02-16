@@ -70,20 +70,33 @@ ul li::before{
   top: 12px;
   left: 8px;
 }
-.remove-button {
-  background-color: #fc0262;
-  border: none;
-  color: white;
-  font-size: 14px;
-  margin-left: 300px;
- 
-  padding: 10px 20px;
-  cursor: pointer;
-  display: flex;
+ul li.checked {
+  color: #DFB6D2;
+  background-color: #657166;
+  border-radius: 26px;
+  margin-top: 12px;
+  font-style: italic;
 }
+ul li.checked::before {
+  background-image: url("png/checked.png");
+  margin-top: -4px;
 
-.remove-button:hover {
-  text-decoration: underline;
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 1px;
+  width: 50px;
+  height: 40px;
+  font-size: 22px;
+  color: red;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 26px;
+  font-style: normal;
+}
+ul li span:hover {
+  background: rgb(180, 105, 96);
 }
 
 
